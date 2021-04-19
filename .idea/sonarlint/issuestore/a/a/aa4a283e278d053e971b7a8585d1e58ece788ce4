@@ -1,0 +1,19 @@
+
+w
+java:S1104"ZMake txtpasswordBox a static final constant or non-public and provide accessors if needed.(ŒÒ¹Î8°•Â®‹/
+R
+java:S2209""5Change this instance-reference to a static reference.(×á’8ŒÔ­‹/
+R
+java:S2209"5Change this instance-reference to a static reference.(×á’8‹©Ó­‹/
+~
+java:S14886"cImmediately return this expression instead of assigning it to the temporary variable "isDisplayed".(ÌçúÍùÿÿÿÿ
+~
+java:S14881"cImmediately return this expression instead of assigning it to the temporary variable "isDisplayed".(´Ûâÿÿÿÿÿ
+z
+java:S1104"XMake txteEmailBox a static final constant or non-public and provide accessors if needed.(øÍà×úÿÿÿÿ8÷Á®‹/
+€
+java:S1488"cImmediately return this expression instead of assigning it to the temporary variable "isDisplayed".(Îˆ˜ÿ8Şâ¦®‹/
+S
+java:S1128"=Remove this unused import 'org.openqa.selenium.Capabilities'.(ÿ·šâ
+_
+java:S1128"DRemove this unused import 'com.syscolab.qe.core.ui.web.SyscoLabWUI'.(…Íä´øÿÿÿÿ

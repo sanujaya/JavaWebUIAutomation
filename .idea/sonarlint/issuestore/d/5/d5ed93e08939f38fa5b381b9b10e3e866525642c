@@ -1,0 +1,11 @@
+
+T
+java:S1128"9Remove this unused import 'org.example.common.Constants'.(«¾û€ıÿÿÿÿ
+a
+java:S1128"KRemove this unused import 'org.openqa.selenium.remote.DesiredCapabilities'.(¦ò©Š
+T
+java:S1128">Remove this unused import 'org.example.utils.DriverSetUpUtil'.(ĞÕŞà
+o
+java:S1104"TMake homePage a static final constant or non-public and provide accessors if needed.(Œ­óşÿÿÿÿ
+p
+java:S1104"UMake loginPage a static final constant or non-public and provide accessors if needed.(×Ìü­úÿÿÿÿ

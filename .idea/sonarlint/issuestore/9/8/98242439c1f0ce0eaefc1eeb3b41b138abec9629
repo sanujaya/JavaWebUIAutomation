@@ -1,0 +1,6 @@
+
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ÁÚÒ8Ú¬˜£/
+Z	java:S106("9Replace this use of System.out or System.err by a logger.(ò‚Şùÿÿÿÿ8µ¡Ğ¢/
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(¥ı¸Èùÿÿÿÿ8Ğ¢/
+t
+java:S1104"YMake addToCartPage a static final constant or non-public and provide accessors if needed.(•‰Èûÿÿÿÿ

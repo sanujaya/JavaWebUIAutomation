@@ -1,0 +1,81 @@
+
+†
+java:S1488"cImmediately return this expression instead of assigning it to the temporary variable "isDisplayed".(»£‰óÿÿÿÿÿ8€ûıª‹/
+o
+java:S1104 "RMake txtCCV a static final constant or non-public and provide accessors if needed.(¦¥µØ8ÉÖÅ©‹/
+‚
+java:S1104"`Make lblStateErrorMessage a static final constant or non-public and provide accessors if needed.(ÒŞ‹…üÿÿÿÿ8Ù«‡©‹/
+„
+java:S1488j"gImmediately return this expression instead of assigning it to the temporary variable "isPostCodeError".( ­Ÿç8“ø–ª‹/
+R
+java:S2209†"5Change this instance-reference to a static reference.(½÷Ù,8†ÈËª‹/
+U	java:S106Q"9Replace this use of System.out or System.err by a logger.(›éÄ¿8€ºª‹/
+X
+java:S2209„"5Change this instance-reference to a static reference.( Âàöüÿÿÿÿ8ªçÄª‹/
+y
+java:S1104"WMake btnContinue a static final constant or non-public and provide accessors if needed.(€âØçøÿÿÿÿ8·Á‘©‹/
+S
+java:S2209‹"5Change this instance-reference to a static reference.(Ö×ÔŒ8ÄÜÍª‹/
+R
+java:S2209v"5Change this instance-reference to a static reference.(šÉ°¡8ŒÆ¦¥/
+Š
+java:S1192™"lDefine a constant instead of duplicating this literal "//div[@class='hosted-error']//span[text()='" 3 times.(«°‹8³¶„«‹/
+y
+java:S1104"WMake txtPostCode a static final constant or non-public and provide accessors if needed.(ëàïµúÿÿÿÿ8Î·”©‹/
+v
+java:S1104"YMake txtCardNumber a static final constant or non-public and provide accessors if needed.(«”„È8ÉÖÅ©‹/
+‚
+java:S1488e"eImmediately return this expression instead of assigning it to the temporary variable "isSuburbError".(šÛ·ÿ8‚§ª‹/
+~
+java:S1104"bMake lblAddressErrorMessage a static final constant or non-public and provide accessors if needed.(Ú¶ÜB8É…©‹/
+Z	java:S106U"9Replace this use of System.out or System.err by a logger.(—µ‹Ãşÿÿÿÿ8€ºª‹/
+†
+java:S1488£"cImmediately return this expression instead of assigning it to the temporary variable "isDisplayed".(Åí½ºşÿÿÿÿ8³¶„«‹/
+y
+java:S1104"WMake lblLastName a static final constant or non-public and provide accessors if needed.(¨äÿèÿÿÿÿÿ8·Á‘©‹/
+ƒ
+java:S1488["fImmediately return this expression instead of assigning it to the temporary variable "isAddressError".(¹Š÷8à‹”ª‹/
+ƒ
+java:S1104"aMake lblSuburbErrorMessage a static final constant or non-public and provide accessors if needed.(Â»Ïíÿÿÿÿÿ8úâ†©‹/
+Š
+java:S1488n"mImmediately return this expression instead of assigning it to the temporary variable "islblPhoneNumberError".(“²€8Âû›ª‹/
+v
+java:S1104"ZMake txtPhoneNumber a static final constant or non-public and provide accessors if needed.(úº±G8èÍ–©‹/
+`
+java:S1155P">Use isEmpty() to check whether the collection is empty or not.(÷òñ›ıÿÿÿÿ8€ºª‹/
+ˆ
+java:S1104"fMake lblPhoneNumberErrorMessage a static final constant or non-public and provide accessors if needed.(´‹üáÿÿÿÿÿ8Ù«‡©‹/
+~
+java:S1488("aImmediately return this expression instead of assigning it to the temporary variable "firstName".(ÇœóÉ8ÓƒÔ¨‹/
+u
+java:S1104"XMake drpdDelivery a static final constant or non-public and provide accessors if needed.(ºüªµ8Õ ©‹/
+]	java:S125"<This block of commented-out lines of code should be removed.(ì›šÑûÿÿÿÿ8÷ã§¥/
+R
+java:S2209u"5Change this instance-reference to a static reference.(ƒ¬—Ï8ŒÆ¦¥/
+X
+java:S2209’"5Change this instance-reference to a static reference.(’Éò„øÿÿÿÿ8ğ­Ñª‹/
+R
+java:S2209”"5Change this instance-reference to a static reference.(½÷Ù,8ğ­Ñª‹/
+
+java:S1488`"dImmediately return this expression instead of assigning it to the temporary variable "isStateError".(……ìş8ÆÃ–ª‹/
+R
+java:S2209t"5Change this instance-reference to a static reference.(‘ÂÚ·8ŒÆ¦¥/
+v
+java:S1104"YMake txtExpireDate a static final constant or non-public and provide accessors if needed.(şš²8ÉÖÅ©‹/
+…
+java:S1104"cMake lblPostCodeErrorMessage a static final constant or non-public and provide accessors if needed.(ÆÏÅÂüÿÿÿÿ8Ù«‡©‹/
+w
+java:S1104!"ZMake btnPlaceHolder a static final constant or non-public and provide accessors if needed.(ÚÜœ§8ØİÊ©‹/
+
+java:S1488™"cImmediately return this expression instead of assigning it to the temporary variable "isDisplayed".(«°‹8ØØúª‹/
+W	java:S125y"<This block of commented-out lines of code should be removed.(½Œ28âßª¥/
+z
+java:S1104"XMake lblFirstName a static final constant or non-public and provide accessors if needed.(Ó‘¡Ëüÿÿÿÿ8·Á‘©‹/
+}
+java:S1488-"`Immediately return this expression instead of assigning it to the temporary variable "lastName".(ôÊğ¯8éå×¨‹/
+s
+java:S1104"VMake txtAddress a static final constant or non-public and provide accessors if needed.(ŒôÙ8·Á‘©‹/
+R
+java:S1905v"5Remove this unnecessary cast to "JavascriptExecutor".(šÉ°¡8ŒÆ¦¥/
+R
+java:S2209"5Change this instance-reference to a static reference.(½÷Ù,8€¦Ïª‹/

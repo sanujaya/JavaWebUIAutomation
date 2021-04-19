@@ -1,0 +1,32 @@
+
+R
+java:S2209C"5Change this instance-reference to a static reference.(——¶ç8ŠÃ¨/
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(ÑÕÚº
+3
+java:S2119-"Save and re-use this "Random".(¼İÅf
+U	java:S106t"9Replace this use of System.out or System.err by a logger.(•£»ô8Ñ·‘£/
+U	java:S106E"9Replace this use of System.out or System.err by a logger.(ÿÒüë8¡úÄ¨/
+j	java:S100r"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ÁÚÒ8µ‚£/
+Z	java:S106|"9Replace this use of System.out or System.err by a logger.(«¡‰ºøÿÿÿÿ8Œ‚©£/
+[	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(Ô‚²ìüÿÿÿÿ8ğ×«£/
+d
+java:S1126"AReplace this if-then-else statement by a single return statement.(ä¬İşÿÿÿÿ8ëÇˆ¢/
+Z	java:S106m"9Replace this use of System.out or System.err by a logger.(èƒ§—üÿÿÿÿ8ÇĞñ¢/
+K
+java:S2209>"5Change this instance-reference to a static reference.(‚ıìÈ
+d
+java:S1126‰"AReplace this if-then-else statement by a single return statement.(¢á¶Îøÿÿÿÿ8ëÇˆ¢/
+K
+java:S2209X"5Change this instance-reference to a static reference.(——¶ç
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(ƒĞÿ´ùÿÿÿÿ
+R
+java:S2209F"5Change this instance-reference to a static reference.(——¶ç8¢äÁ¨/
+U	java:S106K"9Replace this use of System.out or System.err by a logger.(Ñ«ÚË8€‘¡¨‹/
+U	java:S106J"9Replace this use of System.out or System.err by a logger.(¸ï²ô8Æ±Ÿ¨‹/
+r
+java:S1104"UMake itemTitle a static final constant or non-public and provide accessors if needed.(Ó•Ï£8éÑˆ´‹/
+Z	java:S106g"9Replace this use of System.out or System.err by a logger.(óõğÅûÿÿÿÿ8ÇĞñ¢/
+w
+java:S1104"UMake itemPrice a static final constant or non-public and provide accessors if needed.(ƒ×°¡ÿÿÿÿÿ8†ßò¡/
+K
+java:S22095"5Change this instance-reference to a static reference.(‚ıìÈ
