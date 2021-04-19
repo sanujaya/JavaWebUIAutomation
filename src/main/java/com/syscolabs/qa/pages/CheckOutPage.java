@@ -149,17 +149,44 @@ public class CheckOutPage {
 
     }
 
+    public void enterInValidCardNumber(){
+        WebElement creditCardNumber = syscoLabUI.driver.switchTo().frame("braintree-hosted-field-number").findElement(txtCardNumber);
+        syscoLabUI.sendKeys(creditCardNumber, Constants.INVALID_CREDIT_CARD);
+        syscoLabUI.driver.switchTo().defaultContent();
+
+    }
+
+    public void enterInValidExpireDate(){
+        WebElement expireDate = syscoLabUI.driver.switchTo().frame("braintree-hosted-field-expirationDate").findElement(txtExpireDate);
+        syscoLabUI.sendKeys(expireDate, Constants.INVALID_EXPIRE_DATE);
+        syscoLabUI.driver.switchTo().defaultContent();
+
+    }
+
+    public void enterInValidCCV(){
+        WebElement ccv = syscoLabUI.driver.switchTo().frame("braintree-hosted-field-cvv").findElement(txtCCV);
+        syscoLabUI.sendKeys(ccv, Constants.INVALID_CCV_CODE);
+        syscoLabUI.driver.switchTo().defaultContent();
+
+    }
+
+
+
+
     public boolean isInvalidCreditCardError() {
+        syscoLabUI.sleep(5);
         boolean isDisplayed = syscoLabUI.isDisplayed(By.xpath("//div[@class='hosted-error']//span[text()='" + Constants.CREDIT_CARD_NUMBER_ERROR+ "']"));
         return isDisplayed;
     }
 
     public boolean isInvalidExpireDateError() {
+        syscoLabUI.sleep(5);
         boolean isDisplayed = syscoLabUI.isDisplayed(By.xpath("//div[@class='hosted-error']//span[text()='" + Constants.EXPIRATION_DATE_ERROR+ "']"));
         return isDisplayed;
     }
 
     public boolean isInvalidCCVError() {
+        syscoLabUI.sleep(5);
         boolean isDisplayed = syscoLabUI.isDisplayed(By.xpath("//div[@class='hosted-error']//span[text()='" + Constants.CCV_NUMBER_ERROR+ "']"));
         return isDisplayed;
     }

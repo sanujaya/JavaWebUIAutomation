@@ -43,8 +43,8 @@ public class AddToCartPage {
         do {
 
             Random random = new Random();
-            int randomNo = 0;
-            while (randomNo<=0)
+            int randomNo =3 ;
+            while (randomNo<=3)
                 randomNo = random.nextInt(50);
 
             System.out.println("random number = "+ randomNo);
