@@ -51,28 +51,14 @@ public class CheckOut {
 
         checkOutPage.clickPlaceHolder();
         Assert.assertTrue(checkOutPage.isInvalidCreditCardError(),"Credit card Mandatory validation error message is not displayed");
-        System.out.printf("Credit card Mandatory validation error message is displayed");
- /*       checkOutPage.enterInValidCardNumber();
-        syscoLabUI.sleep(5);
-        checkOutPage.clickPlaceHolder();
-        syscoLabUI.sleep(5);
-        Assert.assertTrue(checkOutPage.isInvalidCreditCardError(),"Credit card field validation error message is not displayed");
-        System.out.printf("Credit card field validation error message is displayed");
-*/
+        //System.out.printf("Credit card Mandatory validation error message is displayed");
     }
 
     public void validateExpireDateFields(){
         checkOutPage.enterValidCardNumber();
         checkOutPage.clickPlaceHolder();
         Assert.assertTrue(checkOutPage.isInvalidExpireDateError(),"Expiredate Mandatory validation error message is not displayed");
-        System.out.printf("Expiredate Mandatory validation error message is displayed");
-/*        checkOutPage.enterInValidExpireDate();
-        syscoLabUI.sleep(5);
-        checkOutPage.clickPlaceHolder();
-        syscoLabUI.sleep(5);
-        Assert.assertTrue(checkOutPage.isInvalidExpireDateError(),"Expiredate field validation error message is not displayed");
-        System.out.printf("Expiredate field validation error message is displayed");
- */
+        //System.out.printf("Expiredate Mandatory validation error message is displayed");
     }
 
     public void validateCCVFields(){
@@ -81,26 +67,19 @@ public class CheckOut {
         checkOutPage.enterValidExpireDate();
         checkOutPage.clickPlaceHolder();
         softAssert.assertTrue(checkOutPage.isInvalidCCVError(),"CCV Mandatory validation error message is not displayed");
-        System.out.printf("CCV Mandatory validation error message is displayed");
-/*
-        checkOutPage.enterInValidCCV();
-        syscoLabUI.sleep(5);
-        checkOutPage.clickPlaceHolder();
-        syscoLabUI.sleep(5);
-        softAssert.assertTrue(checkOutPage.isInvalidCCVError(),"CCV field validation error message is not displayed");
-        System.out.printf("CCV field validation error message is displayed");
-  */    softAssert.assertAll();
+        //System.out.printf("CCV Mandatory validation error message is displayed");
+        softAssert.assertAll();
 
 
     }
 
     public void enterValidCCdata(){
         checkOutPage.enterValidCardNumber();
-        System.out.println("enterValidCardNumber");
+        //System.out.println("enterValidCardNumber");
         checkOutPage.enterValidExpireDate();
-        System.out.println("enterValidExpireDate");
+        //System.out.println("enterValidExpireDate");
         checkOutPage.enterValidCCV();
-        System.out.println("enterValidCCV");
+        //System.out.println("enterValidCCV");
     }
 
 

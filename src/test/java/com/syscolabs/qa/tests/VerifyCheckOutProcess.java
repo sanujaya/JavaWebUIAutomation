@@ -32,28 +32,28 @@ public class VerifyCheckOutProcess {
 
     }
 
-    @Test()
+    @Test(description = "Checkout process verification")
     public void verifyCheckOutProcess() throws InterruptedException {
         checkOut.verifyFirstAndLastName();
-        System.out.println("verifyFirstAndLastName");
+        //System.out.println("verifyFirstAndLastName");
         checkOut.mandatoryFieldalidation();
-        System.out.println("mandatoryFieldalidation");
+        //System.out.println("mandatoryFieldalidation");
         checkOut.addMandatoryFields();
-        System.out.println("addMandatoryFields");
+        //System.out.println("addMandatoryFields");
         checkOut.selectDeliveryMethod();
-        System.out.println("selectDeliveryMethod");
+        //System.out.println("selectDeliveryMethod");
         checkOut.clickContinueButton();
-        System.out.println("clickContinueButton");
+        //System.out.println("clickContinueButton");
         checkOut.selectPaymentOption();
-        System.out.println("selectPaymentOption");
+        //System.out.println("selectPaymentOption");
         checkOut.validateCreditCardNUmberFields();
-        System.out.println("validateCreditCardNUmberFields");
+        //System.out.println("validateCreditCardNUmberFields");
         checkOut.validateExpireDateFields();
-        System.out.println("validateExpireDateFields");
+        //System.out.println("validateExpireDateFields");
         checkOut.validateCCVFields();
-        System.out.println("validateCCVFields");
+        //System.out.println("validateCCVFields");
         checkOut.enterValidCCdata();
-        System.out.println("enterValidCCdata");
+        //System.out.println("enterValidCCdata");
 
 
 

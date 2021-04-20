@@ -47,12 +47,12 @@ public class AddToCartPage {
             while (randomNo<=3)
                 randomNo = random.nextInt(50);
 
-            System.out.println("random number = "+ randomNo);
+            //System.out.println("random number = "+ randomNo);
 
             selectItem = syscoLabUI.findElement(By.xpath("(//img[@class='product-image-photo'])["+randomNo+"]"));
             syscoLabUI.driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
             title = selectItem.getAttribute("title");
-            System.out.println("Title = "+title);
+            //System.out.println("Title = "+title);
 
             priceAvailability = syscoLabUI.findElements(By.xpath("//a[@title='"+title+"']/parent::strong/parent::div/div")).size();
 
@@ -66,13 +66,13 @@ public class AddToCartPage {
         syscoLabUI.sleep(5);
         syscoLabUI.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         syscoLabUI.click(selectItem);
-        System.out.println("click");
+        //System.out.println("click");
         syscoLabUI.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         syscoLabUI.sleep(5);
 
-        System.out.println("Item Titel = "+title);
-        System.out.println("Item Price = "+selectedProductPrice);
+        //System.out.println("Item Titel = "+title);
+        //System.out.println("Item Price = "+selectedProductPrice);
 
         itemTitle =  title;
         itemPrice = selectedProductPrice;
@@ -100,20 +100,20 @@ public class AddToCartPage {
 
     public void clickAddToCart(){
         syscoLabUI.click(btnAddToCart);
-        System.out.println("Add to cart");
+        //System.out.println("Add to cart");
         syscoLabUI.sleep(5);
     }
 
     public void clickShoppingCart(){
         syscoLabUI.click(btnshoppingCartIcon);
-        System.out.println("Click shopping cart");
+        //System.out.println("Click shopping cart");
         syscoLabUI.sleep(5);
 
     }
 
     public void ClickViewCart(){
         syscoLabUI.click(btnViewCart);
-        System.out.println("Click view cart");
+        //System.out.println("Click view cart");
     }
 
 
@@ -121,14 +121,14 @@ public class AddToCartPage {
 
     public String getProductName(){
         String productName = syscoLabUI.findElement(By.xpath("(//div[@class='item-details']//strong//a)[1]")).getText();
-        System.out.println("Product Name ="+productName);
+        //System.out.println("Product Name ="+productName);
         return productName;
 
     }
 
     public String getProductPrice(){
         String productPrice = syscoLabUI.findElement(By.xpath("(//tbody[@class='cart item']//tr//td//span//span[@class='price'])[1]")).getText().replace("$","");
-        System.out.println("Product Price ="+productPrice);
+        //System.out.println("Product Price ="+productPrice);
         return productPrice;
     }
 

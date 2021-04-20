@@ -35,9 +35,9 @@ public class AddToCart {
 
     public void verifyProductNameAndPrice(){
         Assert.assertTrue(addToCartPage.isItemNameCorrect(),"Product Name is incorrect");
-        System.out.println("Product Name is Correct");
+        //System.out.println("Product Name is Correct");
         Assert.assertTrue(addToCartPage.isItemPriceCorrect(), "Product Price is incorrect");
-        System.out.println("Product Price is Correct");
+        //System.out.println("Product Price is Correct");
     }
 
 

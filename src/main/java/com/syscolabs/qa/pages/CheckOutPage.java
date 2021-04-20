@@ -78,7 +78,7 @@ public class CheckOutPage {
         List<WebElement> dropdownValues = deliveryDropdown.getOptions();
 
         if (dropdownValues.size() > 0) {
-            System.out.println("Delivery options are available");
+            //System.out.println("Delivery options are available");
             deliveryDropdown.selectByValue("Leave near front door");
         }
         else

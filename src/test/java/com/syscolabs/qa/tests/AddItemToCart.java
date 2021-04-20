@@ -28,7 +28,7 @@ public class AddItemToCart {
 
     }
 
-    @Test()
+    @Test(description = "Add item to cart")
     public void addProductItemToCart() throws InterruptedException {
 
 

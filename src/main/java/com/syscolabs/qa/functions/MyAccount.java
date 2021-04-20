@@ -11,26 +11,26 @@ public class MyAccount {
     public AddToCart addToCart = new AddToCart();
 
     public void isUserNameDisplayed(){
-        System.out.println("Page username is ="+myAccountPage.readUsername());
+        //System.out.println("Page username is ="+myAccountPage.readUsername());
         Assert.assertEquals(myAccountPage.readUsername(), Constants.USER_NAME,"Username is incorrect");
 
     }
 
     public void removeShoppingCartItems(){
         if(myAccountPage.isShoppingCartEmpty()){
-            System.out.println("click shopping icon");
+            //System.out.println("click shopping icon");
             //myAccountPage.clickShoppingCart();
-            System.out.println("remove shopping item");
+            //System.out.println("remove shopping item");
             myAccountPage.clickRemoveItems();
-            System.out.println("close page");
+            //System.out.println("close page");
             myAccountPage.closeShoppingCart();
-            System.out.println("closed");
+            //System.out.println("closed");
 
         }
 
 
 
-        System.out.println("true and add items");
+        //System.out.println("true and add items");
         //addToCart.addItemsToCart();
 
     }

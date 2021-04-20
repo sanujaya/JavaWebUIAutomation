@@ -5,9 +5,7 @@ import com.syscolabs.qa.pages.LoginPage;
 import com.syscolabs.qa.pages.HomePage;
 import org.testng.Assert;
 
-/**
- * Created by Rifad on 5/21/18.
- */
+
 public class Login {
     protected SyscoLabUI syscoLabUI = new SyscoLabUI();
     public LoginPage loginPage = new LoginPage();

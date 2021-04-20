@@ -24,14 +24,14 @@ public class MyAccountPage {
 
     public String readCartQuantity(){
         String cartQuantity= syscoLabUI.findElement(By.xpath("//span[@class='showcart-trigger header-sidebar-link -cart']/span")).getAttribute("class");
-        System.out.println("Site quantity name = "+cartQuantity);
+        //System.out.println("Site quantity name = "+cartQuantity);
         return cartQuantity;
 
     }
 
     public String readCartQuantityCount(){
         String cartQuantityCount = syscoLabUI.findElement(By.xpath("//span[@class='showcart-trigger header-sidebar-link -cart']/span")).getText();
-        System.out.println("Site quantity count = "+cartQuantityCount);
+        //System.out.println("Site quantity count = "+cartQuantityCount);
         return cartQuantityCount;
 
     }
@@ -46,7 +46,7 @@ public class MyAccountPage {
     public Boolean isShoppingCartEmpty(){
         boolean isEmpty;
         isEmpty = readCartQuantity().equals(Constants.SHOPPING_CART_NOT_EMPTY);
-        System.out.println("isshoppingCartEmpty = "+ isEmpty);
+        //System.out.println("isshoppingCartEmpty = "+ isEmpty);
         return isEmpty;
     }
 
@@ -76,9 +76,6 @@ public class MyAccountPage {
         JavascriptExecutor executor = (JavascriptExecutor)syscoLabUI.driver;
         executor.executeScript("arguments[0].click()",btnCloseIcon);
         syscoLabUI.sleep(5);
-
-        //syscoLabUI.click(btnCloseIcon);
-
         syscoLabUI.sleep(5);
 
     }
