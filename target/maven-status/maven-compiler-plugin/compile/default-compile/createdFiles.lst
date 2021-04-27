@@ -1,7 +1,0 @@
-org\example\data\LoginData.class
-org\example\utils\DriverSetUpUtil.class
-org\example\utils\DateUtils.class
-org\example\utils\ExcelUtil.class
-org\example\pages\LoginPage.class
-org\example\common\Constants.class
-org\example\functions\Login.class

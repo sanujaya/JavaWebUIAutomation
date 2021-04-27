@@ -1,2 +1,6 @@
-C:\Hasitha\Assignment\JavaWebUIAutomation\src\test\java\org\example\tests\LoginTest.java
-C:\Hasitha\Assignment\JavaWebUIAutomation\src\test\java\org\example\utils\TestBase.java
+C:\Hasitha\Assignment\JavaWebUIAutomation\src\test\java\com\syscolabs\qa\tests\VerifyCheckOutProcess.java
+C:\Hasitha\Assignment\JavaWebUIAutomation\src\test\java\com\syscolabs\qa\tests\RemoveShoppingCartItems.java
+C:\Hasitha\Assignment\JavaWebUIAutomation\src\test\java\com\syscolabs\qa\tests\LoginWithInValidCredentials.java
+C:\Hasitha\Assignment\JavaWebUIAutomation\src\test\java\assigment.java
+C:\Hasitha\Assignment\JavaWebUIAutomation\src\test\java\com\syscolabs\qa\tests\LoginWithValidCredentials.java
+C:\Hasitha\Assignment\JavaWebUIAutomation\src\test\java\com\syscolabs\qa\tests\AddItemToCart.java
