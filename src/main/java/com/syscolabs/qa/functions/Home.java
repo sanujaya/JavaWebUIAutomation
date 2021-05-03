@@ -9,7 +9,7 @@ public class Home {
 public HomePage homePage = new HomePage();
 
 
-    public void loadHomePage(){
+    public void loadHomePage() {
         homePage.loadHomePage(Constants.WEB_URL);
     }
 

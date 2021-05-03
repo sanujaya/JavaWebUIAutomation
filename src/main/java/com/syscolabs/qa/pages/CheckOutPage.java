@@ -1,6 +1,5 @@
 package com.syscolabs.qa.pages;
 
-import com.syscolab.qe.core.ui.SyscoLabUI;
 import com.syscolabs.qa.common.Constants;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -11,41 +10,35 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class CheckOutPage {
-    SyscoLabUI syscoLabUI = new SyscoLabUI();
-    public By lblFirstName = By.xpath("//div[@name='shippingAddress.firstname']//div//input");
-    public By lblLastName = By.xpath("//div[@name='shippingAddress.lastname']//div//input");
-    public By btnContinue = By.xpath("//button[@title='Continue']");
-    public By lblAddressErrorMessage = By.xpath("//input[@name='street[0]']//..//div[starts-with(@id,'error')]//span");
-    public By lblSuburbErrorMessage = By.xpath("//input[@name='city']//..//div[starts-with(@id,'error')]//span");
-    public By lblStateErrorMessage = By.xpath("//select[@name='region_id']//..//div[starts-with(@id,'error')]//span");
-    public By lblPostCodeErrorMessage = By.xpath("//input[@name='postcode']//..//div[starts-with(@id,'error')]//span");
-    public By lblPhoneNumberErrorMessage = By.xpath("//input[@name='telephone']//..//div[starts-with(@id,'error')]//span");
-    public By txtAddress = By.xpath("//div[@name='shippingAddress.street.0']/div/input");
-    public By txtPostCode = By.xpath("//div[@name='shippingAddress.postcode']/div/input");
-    public By txtPhoneNumber = By.xpath("(//input[@placeholder='0XXX XXX XXX'])[1]");
-    public By drpdDelivery = By.xpath("//select[@name='delivery_notes']");
+public class CheckOutPage extends BasePage{
 
-    //public By rdBtnCreditCcard = By.xpath("//label[@for='braintree']");
-    public By txtCardNumber = By.xpath("//input[@id='credit-card-number']");
-    public By txtExpireDate = By.xpath("//input[@id='expiration']");
-    public By txtCCV = By.xpath("//input[@id='cvv']");
-    public By btnPlaceHolder = By.xpath("//div[@class='opc-submit-step']//button[@title='Place Order']");
+    private final By lblFirstName = By.xpath("//div[@name='shippingAddress.firstname']//div//input");
+    private final By lblLastName = By.xpath("//div[@name='shippingAddress.lastname']//div//input");
+    private final By btnContinue = By.xpath("//button[@title='Continue']");
+    private final By lblAddressErrorMessage = By.xpath("//input[@name='street[0]']//..//div[starts-with(@id,'error')]//span");
+    private final By lblSuburbErrorMessage = By.xpath("//input[@name='city']//..//div[starts-with(@id,'error')]//span");
+    private final By lblStateErrorMessage = By.xpath("//select[@name='region_id']//..//div[starts-with(@id,'error')]//span");
+    private final By lblPostCodeErrorMessage = By.xpath("//input[@name='postcode']//..//div[starts-with(@id,'error')]//span");
+    private final By lblPhoneNumberErrorMessage = By.xpath("//input[@name='telephone']//..//div[starts-with(@id,'error')]//span");
+    private final By txtAddress = By.xpath("//div[@name='shippingAddress.street.0']/div/input");
+    private final By txtPostCode = By.xpath("//div[@name='shippingAddress.postcode']/div/input");
+    private final By txtPhoneNumber = By.xpath("(//input[@placeholder='0XXX XXX XXX'])[1]");
+    private final By drpdDelivery = By.xpath("//select[@name='delivery_notes']");
 
+    private final By txtCardNumber = By.xpath("//input[@id='credit-card-number']");
+    private final By txtExpireDate = By.xpath("//input[@id='expiration']");
+    private final By txtCCV = By.xpath("//input[@id='cvv']");
+    private final By btnPlaceHolder = By.xpath("//div[@class='opc-submit-step']//button[@title='Place Order']");
 
 
 
-
-    public String getFirstName(){
-        String firstName = syscoLabUI.findElement(lblFirstName).getAttribute("value");
-        return firstName;
+    public String returnFirstName(){
+        return syscoLabUI.findElement(lblFirstName).getAttribute("value");
     }
 
-    public String getLastName(){
-        String lastName = syscoLabUI.findElement(lblLastName).getAttribute("value");
-        return lastName;
+    public String returnLastName(){
+        return syscoLabUI.findElement(lblLastName).getAttribute("value");
     }
-
 
 
 
@@ -87,28 +80,23 @@ public class CheckOutPage {
         syscoLabUI.sleep(5);
     }
 
-    public boolean isAddressErrorMessageDisplayed(){
-        Boolean isAddressError = syscoLabUI.isDisplayed(lblAddressErrorMessage);
-        return isAddressError;
+    public String getAddressFieldErrorMessage(){
+        return syscoLabUI.getText(lblAddressErrorMessage);
     }
 
-    public boolean isStateErrorMessageDisplayed(){
-        Boolean isStateError = syscoLabUI.isDisplayed(lblStateErrorMessage);
-        return isStateError;
+    public String getStateFieldErrorMessage(){
+        return syscoLabUI.getText(lblStateErrorMessage);
     }
 
-    public boolean isSuburbErrorMessageDisplayed(){
-        Boolean isSuburbError = syscoLabUI.isDisplayed(lblSuburbErrorMessage);
-        return isSuburbError;
+    public String getSuburbFieldErrorMessage(){
+        return syscoLabUI.getText(lblSuburbErrorMessage);
     }
 
-    public boolean isPostCodeErrorMessageDisplayed(){
-        Boolean isPostCodeError = syscoLabUI.isDisplayed(lblPostCodeErrorMessage);
-        return isPostCodeError;
+    public String getPostCodeFieldErrorMessage(){
+        return syscoLabUI.getText(lblPostCodeErrorMessage);
     }
-    public boolean isPhoneNumberErrorMessageDisplayed(){
-        Boolean islblPhoneNumberError = syscoLabUI.isDisplayed(lblPhoneNumberErrorMessage);
-        return islblPhoneNumberError;
+    public String getPhoneNumberFieldErrorMessage(){
+        return syscoLabUI.getText(lblPhoneNumberErrorMessage);
     }
 
 
@@ -117,9 +105,6 @@ public class CheckOutPage {
         syscoLabUI.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         JavascriptExecutor executor = (JavascriptExecutor)syscoLabUI.driver;
         executor.executeScript("arguments[0].click()",rdBtnCreditCcard);
-
-        //syscoLabUI.sleep(5);
-        //syscoLabUI.click(rdBtnCreditCcard);
         syscoLabUI.sleep(5);
     }
 
@@ -171,24 +156,19 @@ public class CheckOutPage {
     }
 
 
-
-
-    public boolean isInvalidCreditCardError() {
+    public String isInvalidCreditCardError() {
         syscoLabUI.sleep(5);
-        boolean isDisplayed = syscoLabUI.isDisplayed(By.xpath("//div[@class='hosted-error']//span[text()='" + Constants.CREDIT_CARD_NUMBER_ERROR+ "']"));
-        return isDisplayed;
+        return syscoLabUI.getText(By.xpath("//div[@class='hosted-error']//span[text()='" + Constants.CREDIT_CARD_NUMBER_ERROR+ "']"));
     }
 
-    public boolean isInvalidExpireDateError() {
+    public String isInvalidExpireDateError() {
         syscoLabUI.sleep(5);
-        boolean isDisplayed = syscoLabUI.isDisplayed(By.xpath("//div[@class='hosted-error']//span[text()='" + Constants.EXPIRATION_DATE_ERROR+ "']"));
-        return isDisplayed;
+        return syscoLabUI.getText(By.xpath("//div[@class='hosted-error']//span[text()='" + Constants.EXPIRATION_DATE_ERROR+ "']"));
     }
 
-    public boolean isInvalidCCVError() {
+    public String isInvalidCCVError() {
         syscoLabUI.sleep(5);
-        boolean isDisplayed = syscoLabUI.isDisplayed(By.xpath("//div[@class='hosted-error']//span[text()='" + Constants.CCV_NUMBER_ERROR+ "']"));
-        return isDisplayed;
+        return syscoLabUI.getText(By.xpath("//div[@class='hosted-error']//span[text()='" + Constants.CCV_NUMBER_ERROR+ "']"));
     }
 
 

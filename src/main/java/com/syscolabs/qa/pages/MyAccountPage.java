@@ -1,6 +1,5 @@
 package com.syscolabs.qa.pages;
 
-import com.syscolab.qe.core.ui.SyscoLabUI;
 import com.syscolabs.qa.common.Constants;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -8,32 +7,26 @@ import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
 
-public class MyAccountPage {
-    protected SyscoLabUI syscoLabUI = new SyscoLabUI();
+public class MyAccountPage extends BasePage{
 
-    public By btnshoppingCartIcon = By.xpath("//span[@class='showcart-trigger header-sidebar-link -cart']");
-    private By btnLastDeleteIcon = By.xpath("//a[@title='Remove item'][last()]");
-    private By btnOk = By.xpath("//button[contains(@class,'accept')]");
-    //private By btnCloseIcon = By.xpath("//div[@class='close']");
+    private final By btnshoppingCartIcon = By.xpath("//span[@data-container='#minicartOffcanvas']");
+    private final By btnLastDeleteIcon = By.xpath("//a[@title='Remove item'][last()]");
+    private final By btnOk = By.xpath("//button[contains(@class,'accept')]");
+    private final By lblUserName = By.xpath("//div[@class='box box-information']/div/p");
+    private final By lblCartQuantity = By.xpath("//span[@class='showcart-trigger header-sidebar-link -cart']/span");
 
 
     public String readUsername(){
-        String userName = syscoLabUI.findElement(By.xpath("//div[@class='box box-information']/div/p")).getAttribute("innerText").split("\n")[0];
-        return userName;
+        return syscoLabUI.findElement(lblUserName).getAttribute("innerText").split("\n")[0];
     }
 
     public String readCartQuantity(){
-        String cartQuantity= syscoLabUI.findElement(By.xpath("//span[@class='showcart-trigger header-sidebar-link -cart']/span")).getAttribute("class");
-        //System.out.println("Site quantity name = "+cartQuantity);
-        return cartQuantity;
+        return syscoLabUI.findElement(lblCartQuantity).getAttribute("class");
 
     }
 
     public String readCartQuantityCount(){
-        String cartQuantityCount = syscoLabUI.findElement(By.xpath("//span[@class='showcart-trigger header-sidebar-link -cart']/span")).getText();
-        //System.out.println("Site quantity count = "+cartQuantityCount);
-        return cartQuantityCount;
-
+        return syscoLabUI.findElement(lblCartQuantity).getText();
     }
     
 
@@ -54,13 +47,12 @@ public class MyAccountPage {
         int i = Integer.parseInt(String.valueOf(readCartQuantityCount()));
         clickShoppingCart();
         syscoLabUI.sleep(5);
-        System.out.println(i);
+        //System.out.println(i);
 
         while (i >0){
-            syscoLabUI.click(btnLastDeleteIcon);
-            syscoLabUI.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            syscoLabUI.waitTillElementLoaded(btnLastDeleteIcon).click();
             syscoLabUI.sleep(5);
-            syscoLabUI.click(btnOk);
+            syscoLabUI.waitTillElementLoaded(btnOk).click();
             syscoLabUI.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             syscoLabUI.sleep(5);
             i--;
@@ -72,11 +64,11 @@ public class MyAccountPage {
     public void closeShoppingCart(){
 
         WebElement btnCloseIcon = syscoLabUI.driver.findElement(By.xpath("//div[@class='close']"));
-        syscoLabUI.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        syscoLabUI.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         JavascriptExecutor executor = (JavascriptExecutor)syscoLabUI.driver;
         executor.executeScript("arguments[0].click()",btnCloseIcon);
         syscoLabUI.sleep(5);
-        syscoLabUI.sleep(5);
+
 
     }
 
