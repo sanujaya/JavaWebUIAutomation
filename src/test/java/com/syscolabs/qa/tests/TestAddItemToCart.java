@@ -10,12 +10,6 @@ import org.testng.annotations.Test;
 //import org.example.functions.*;
 
 public class TestAddItemToCart extends TestBase {
-    public Home home = new Home();
-    public Login login = new Login();
-    public MyAccount myAccount = new MyAccount();
-    public AddToCart addToCart = new AddToCart();
-
-
 
 
     @Test(description = "Add item to cart")
